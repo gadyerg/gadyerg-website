@@ -8,7 +8,7 @@ function NavBar() {
       <NavLink>About Me</NavLink>
       <NavLink>Projects</NavLink>
       <NavLink external={true}
-        link='https://www.github.com/gadyerg/gadyerg-website'
+        link='https://www.github.com/gadyerg'
       >
       Github</NavLink>
       <NavLink>Contact</NavLink>

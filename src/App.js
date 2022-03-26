@@ -1,12 +1,12 @@
 import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import Name from './components/Name';
+import Intro from './components/Intro';
 
 function App() {
   return (
     <React.Fragment>
       <NavBar />
-      <Name />
+      <Intro />
     </React.Fragment>
   );
 }

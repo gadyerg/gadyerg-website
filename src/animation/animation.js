@@ -8,12 +8,28 @@ export const nameEnter = {
     opacity: 1,
     transition: {
       ease: 'easeIn',
-      duration: 0.4,
+      duration: 0.3,
       when: 'beforeChildren',
       staggerChildren: 0.2,
     },
   },
 };
+
+export const imagePopUp = {
+  initial: {
+    scale: 0,
+  },
+  popUp: {
+    scale: 1,
+    transition: {
+      delay: 1,
+      ease: 'easeIn',
+      type: 'spring',
+      bouce: 1,
+      stiffness: 100,
+    }
+  }
+}
 
 export const navHover = {
   initial: {

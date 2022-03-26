@@ -1,33 +1,47 @@
-import { Link, Center } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { navHover } from '../animation/animation';
+import { Flex, Container, Heading, Avatar } from '@chakra-ui/react';
+import { nameEnter } from '../animation/animation';
+import avatar from '../lib/avatar.png';
 
-function NavBar() {
-  const MotionLink = motion(Link);
-
-  const hover = { textDecoration: 'none' }
+function Intro() {
+  const MotionHeading = motion(Heading);
+  const MotionContainer = motion(Container);
+  const MotionFlex = motion(Flex);
 
   return (
-    <Center fontSize="1.2rem" mt="1rem">
-      <MotionLink
-        _hover={hover}
-        pr="1rem"
-        initial="initial"
-        whileHover="hover"
-        variants={navHover}
+    <MotionFlex
+      variants={nameEnter}
+      direction="column"
+      mt="20rem"
+      ml="10rem"
+      initial="initial"
+      animate="fadeIn"
+      key="menu"
+    >
+      <MotionHeading
+        as='h1'
+        fontSize="8xl"
+        variants={nameEnter}
+        m="0"
+        lineHeight="6.5rem"
       >
-        About Me
-      </MotionLink>
-      <MotionLink pr="1rem"
+        Hello, World!
+        <br />
+        I'm Gadyer Gonzalez.
+      </MotionHeading>
+      <MotionContainer
+        as="i"
+        fontSize="2xl"
+        variants={nameEnter}
+        p='0'
+        m="0"
+        color="gray"
       >
-        Projects
-      </MotionLink>
-      <MotionLink href="https://www.github.com/gadyerg" isExternal pr="1rem">
-        Github
-      </MotionLink>
-      <MotionLink>Contact</MotionLink>
-    </Center>
+        Full Stack Developer
+      </MotionContainer>
+      <Avatar src={avatar} size='2xl' alignSelf='flex-end' position='relative' top='-10rem' right='20rem'/>
+    </MotionFlex>
   );
 }
 
-export default NavBar;
+export default Intro;

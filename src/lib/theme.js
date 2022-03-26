@@ -15,7 +15,7 @@ const config = {
 };
 
 const fonts = {
-  header: 'Roboto, sans-sefif',
+  heading: 'Roboto, sans-serif',
   body: 'Roboto, sans-serif',
 };
 
