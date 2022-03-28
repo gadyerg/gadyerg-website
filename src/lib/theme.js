@@ -3,8 +3,11 @@ import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
   global: (props) => ({
+    html: {
+      scrollBehavior: 'smooth',
+    },
     body: {
-      bg: mode('white', '#2d323b')(props),
+      bg: mode('light', 'dark')(props),
     },
   }),
 };
@@ -20,6 +23,8 @@ const fonts = {
 };
 
 const colors = {
+  light: '#fae2ca',
+  dark: '#2d323b',
   primary: 'green',
 };
 
