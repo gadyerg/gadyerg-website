@@ -13,8 +13,8 @@ function ThemeButton() {
       h='2.5rem'
       borderRadius='15%'
       position='fixed'
-      bottom='.5rem'
       left='.5rem'
+      bottom='.5rem'
       _focus={{outline: 'none'}}
       _active={{bg: bg}}
       _hover={{bg: bg}}

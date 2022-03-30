@@ -1,4 +1,4 @@
-export const nameEnter = {
+export const popUp = {
   initial: {
     y: '2vh',
     opacity: 0,

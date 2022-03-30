@@ -4,6 +4,7 @@ import { mode } from '@chakra-ui/theme-tools';
 const styles = {
   global: (props) => ({
     html: {
+      overflowX: 'hidden',
       scrollBehavior: 'smooth',
     },
     body: {
@@ -25,9 +26,12 @@ const fonts = {
 const colors = {
   light: '#fae2ca',
   dark: '#2d323b',
-  primary: 'green',
 };
 
-const theme = extendTheme({ config, fonts, colors, styles });
+const breakpoints = {
+  mobile: '480px'
+}
+
+const theme = extendTheme({ config, fonts, colors, styles, breakpoints });
 
 export default theme;

@@ -11,7 +11,7 @@ function NavBar() {
         link='https://www.github.com/gadyerg'
       >
       Github</NavLink>
-      <NavLink>Contact</NavLink>
+      <NavLink link='#contact'>Contact</NavLink>
     </Center>
   );
 }

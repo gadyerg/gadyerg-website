@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Flex, Container, Heading, Avatar, ScaleFade  } from '@chakra-ui/react';
-import { nameEnter, imagePopUp } from '../animation/animation';
+import { Flex, Container, Heading, Avatar } from '@chakra-ui/react';
+import { popUp, imagePopUp } from '../animation/animation';
 import avatar from '../lib/avatar.png';
 
 function Intro() {
@@ -11,10 +11,10 @@ function Intro() {
 
   return (
     <MotionFlex
-      variants={nameEnter}
+      variants={popUp}
       direction="column"
-      mt="20rem"
-      ml="10rem"
+      mt={['4rem', '20rem']}
+      ml={['2rem', '10rem']}
       initial="initial"
       animate="fadeIn"
       key="menu"
@@ -22,10 +22,10 @@ function Intro() {
     >
       <MotionHeading
         as='h1'
-        fontSize="8xl"
-        variants={nameEnter}
+        fontSize={['3xl', '8xl']}
+        variants={popUp}
         m="0"
-        lineHeight="6.5rem"
+        lineHeight={['2rem', '6.5rem']}
       >
         Hello, World!
         <br />
@@ -34,7 +34,7 @@ function Intro() {
       <MotionContainer
         as="i"
         fontSize="2xl"
-        variants={nameEnter}
+        variants={popUp}
         p='0'
         m="0"
         color="gray"
@@ -46,11 +46,12 @@ function Intro() {
         initial='initial'
         animate='popUp'
         src={avatar}
-        size='20px'
-        alignSelf='flex-end'
-        position='relative'
-        bottom='25rem'
-        right='15rem'
+        size={['xs', '20px']}
+        m={['0 auto', '0']}
+        mt={['5rem', '0']}
+        alignSelf={['center', 'flex-end']}
+        bottom={['0rem', '25rem']}
+        right={['1rem', '15rem']}
       />
     </MotionFlex>
   );
