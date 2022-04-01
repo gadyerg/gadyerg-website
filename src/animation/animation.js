@@ -43,3 +43,22 @@ export const navHover = {
     }
   },
 };
+
+export const spin = {
+  spin: {
+    rotate: 360,
+    transition: {
+      ease: 'linear',
+      duration: 6,
+      repeat: Infinity,
+    }
+  },
+  spinSmall: {
+    rotate: -360,
+    transition: {
+      ease: 'linear',
+      duration: 6,
+      repeat: Infinity,
+    }
+  }
+}

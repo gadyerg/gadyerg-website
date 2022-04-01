@@ -12,6 +12,7 @@ function AboutMe() {
       direction={['column', 'row']}
       justify='space-between'
       mt='25rem'
+      id='about'
     >
       <MotionContainer
         variants={popUp}
@@ -19,7 +20,6 @@ function AboutMe() {
         whileInView='fadeIn'
         m='0'
         ml={['0rem', '10rem']}
-        id='about'
         pr='0'
       >
         <Heading
