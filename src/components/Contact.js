@@ -4,7 +4,7 @@ function Contact() {
   const bc = useColorModeValue('dark', 'light');
 
   return (
-      <Flex direction='column' align='center' mb='2rem' id='contact'>
+      <Flex direction='column' align='center' mb='2rem' id='contact' mt='10rem'>
         <Heading>Get In Touch:</Heading>
         <Text fontSize='2xl'>
           Feel free to contact me if you have anything to discuss. 

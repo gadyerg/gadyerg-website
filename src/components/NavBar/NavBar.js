@@ -11,7 +11,7 @@ function NavBar() {
         link='https://www.github.com/gadyerg'
       >
       Github</NavLink>
-      <NavLink link='#contact'>Contact</NavLink>
+      <NavLink link='mailto: gadyerg@gmail.com' external={true}>Contact</NavLink>
     </Center>
   );
 }

@@ -16,9 +16,10 @@ function Collage() {
     <MotionGrid
       variants={spin}
       animate='spin'
-      w={['20rem', '45rem']}
+      w={['100%', '45rem']}
       h={['10rem', '30rem']}
-      m={['2rem 0', '0rem']}
+      m='0rem'
+      mt='2rem'
       templateColumns='repeat(3, 1fr)'
       templateRows='repeat(3, 1fr)'
       gap={4}
@@ -34,7 +35,7 @@ function Collage() {
           animate='spinSmall'
           m='auto'
           src={HTML}
-          w={['5rem', '6.5rem']}
+          w={['4rem', '6.5rem']}
         />
       </GridItem>
       <GridItem
@@ -46,9 +47,9 @@ function Collage() {
         <MotionImage
           variants={spin}
           animate='spinSmall'
-          ml='6rem'
+          ml={['auto', '6rem']}
           src={CSS}
-          w={['5rem', '8rem']}
+          w={['4rem', '8rem']}
         />
       </GridItem>
       <GridItem
@@ -62,7 +63,7 @@ function Collage() {
           animate='spinSmall'
           m='auto'
           src={JS}
-          w={['5rem', '8rem']}
+          w={['4rem', '8rem']}
         />
       </GridItem>
       <GridItem
@@ -76,7 +77,7 @@ function Collage() {
           animate='spinSmall'
           m='auto'
           src={Node}
-          w={['5rem', '8rem']}
+          w={['4rem', '8rem']}
         />
       </GridItem>
       <GridItem
@@ -90,7 +91,7 @@ function Collage() {
           animate='spinSmall'
           m='0'
           src={React}
-          w={['5rem', '8rem']}
+          w={['4rem', '8rem']}
         />
       </GridItem>
     </MotionGrid>

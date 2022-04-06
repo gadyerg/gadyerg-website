@@ -1,13 +1,17 @@
 import { Flex, Heading, Box } from '@chakra-ui/react';
 import Project from './Project';
+import MusicPlayerScreenShot from '../../lib/MusicPlayerScreenShot.png';
 
 function Projects() {
   return (
-    <Box mt='20rem' id='projects'>
+    <Box
+      mt={['10rem', '20rem']}
+      id='projects'
+    >
       <Heading
         as='h2'
         fontSize='6xl'
-        ml='10rem'
+        ml={['1rem', '10rem']}
       >
       Projects:</Heading>
       <Flex
@@ -15,7 +19,9 @@ function Projects() {
       >
         <Project
           title='Music Player'
-          link='https://www.hostgator.com/blog/wp-content/uploads/2021/03/How-to-Make-a-Website-Quickly.jpg'/>
+          link={MusicPlayerScreenShot}>
+          This is a full stack application. It allows you to make an account to upload your music to and listen to it.
+        </Project>
       </Flex>
     </Box>
   )
